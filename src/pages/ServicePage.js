@@ -12,7 +12,7 @@ import FaqOne from "../Components/Faq/FaqOne";
 const ServicePage = () => {
   return (
     <>
-        <HeaderOne/>
+        {/* <HeaderOne/> */}
         <PageBanner title='Our Services' bannerBg={bannerBg} currentPage='Service' />
         <ServicesOne/>
         <ServicesCta/>

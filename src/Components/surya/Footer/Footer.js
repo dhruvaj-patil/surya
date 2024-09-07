@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import FooterOneCopyrights from "./FooterOneCopyrights";
+import FooterCopyrights from "./FooterCopyright";
 import { useState } from "react";
 import FooterCta from "./FooterCta";
 
@@ -12,7 +12,7 @@ const FooterOne = () => {
           <div className="container">
             <div className="row">
               <div className="col-xl-5 pe-xl-0 col-sm-6 col-12 ">
-                <div className="single-footer-wid site_info_widget d-flex justify-content-center align-items-center">
+                <div id='contact-us' className="single-footer-wid site_info_widget d-flex justify-content-center align-items-center">
                   <div className="wid-title">
                     <h3>Get In Touch</h3>
                   </div>
@@ -22,7 +22,7 @@ const FooterOne = () => {
                         <i className="fal fa-phone"></i>
                       </div>
                       <div className="contact-info">
-                        <p>+91-20-2951 0473</p>
+                        <a href="tel:123-456-7890">+91-20-2951 0473</a>
                         
                       </div>
                     </div>
@@ -31,7 +31,8 @@ const FooterOne = () => {
                         <i className="fal fa-envelope"></i>
                       </div>
                       <div className="contact-info">
-                        <p>inquiry@suryaengineers.com</p>
+
+                        <a href="">inquiry@suryaengineers.com</a>
                       </div>
                     </div>
                     <div className="single-contact-info">
@@ -39,10 +40,10 @@ const FooterOne = () => {
                         <i className="fal fa-map-marker-alt"></i>
                       </div>
                       <div className="contact-info">
-                        <p>
+                        <a>
                         “Surya House”, S. No. 143, Lagadmala, Sinhagad Road, <br />
                         Opp. Lokmat, Dhayari, Pune 411 041. Maharashtra. India.
-                        </p>
+                        </a>
                       </div>
 {/* 
                       <div className="contact-info">
@@ -102,7 +103,7 @@ const FooterOne = () => {
         </div>
 
         <FooterCta />
-        <FooterOneCopyrights />
+        <FooterCopyrights />
       </footer>
     </>
   );

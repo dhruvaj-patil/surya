@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 const MENU_ITEMS = [
   {
     title: "Home",
-    link: "#",
+    link: "/#",
   },
   {
     title: "What we Do",
-    link: "/services",
+    // link: "/services",
     subMenu: [
       {
         title: "Construction Services",
@@ -122,15 +122,15 @@ const MobileMenu = ({ mobileMenu, handleMobileMenu, menuItems }) => {
       </nav>
 
       <div className="action-bar">
-        <a href="mailto:info@example.com">
-          <i className="fal fa-envelope"></i>info@webmail.com
+        <a href="mailto:inquiry@suryaengineers.com">
+          <i className="fal fa-envelope"></i>inquiry@suryaengineers.com
         </a>
         <a href="tel:123-456-7890">
           <i className="fal fa-phone"></i>987-098-098-09
         </a>
-        <Link to="/contact" className="d-btn theme-btn bg-com">
+        <a href="/#contact-us" className="d-btn theme-btn bg-com">
           Contact Us
-        </Link>
+        </a>
       </div>
     </div>
   );

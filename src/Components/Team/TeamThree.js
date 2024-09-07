@@ -4,7 +4,7 @@ import teamThreeData from './teamThreeData'
 
 const TeamThree = () => {
   return (
-    <section className="our-team-wrapper section-padding pb-0">
+    <section className="our-team-wrapper section-margin pb-0 ">
         <div className="container">
             <div className="row">
                 <div className="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2 text-center col-12">

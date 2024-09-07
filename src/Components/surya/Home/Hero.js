@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import slide1 from "../../assets/surya/images/slide_1.png";
-import slide2 from "../../assets/surya/images/slide_2.png";
-import slide3 from "../../assets/surya/images/slide_3.png";
+import slide2 from "../../../assets/surya/images/slide_2.png";
+import slide3 from "../../../assets/surya/images/slide_3.png";
+import slide1 from "../../../assets/surya/images/slide_1.png";
 
 import "swiper/css";
 import "swiper/css/navigation";

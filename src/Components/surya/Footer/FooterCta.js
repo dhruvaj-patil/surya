@@ -1,6 +1,6 @@
 import React from 'react'
 // import footerLogo from '../../assets/img/footer-logo.png';
-import mainLogo from "../../assets/surya/surya_logo.png";
+import mainLogo from "../../../assets/surya/surya_logo.png";
 
 
 const FooterCta = () => {
@@ -33,7 +33,6 @@ const FooterCta = () => {
             </div>
         </div>
     </div>
-
   )
 }
 

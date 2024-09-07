@@ -15,7 +15,7 @@ import HeroTwo from "../Components/Hero/HeroTwo";
 const HomeTwo = () => {
     return (
         <>
-            <HeaderTwo/>
+            {/* <HeaderTwo/> */}
             <HeroTwo/>
             <AboutTwo/>
             <ServicesTwo/>
@@ -27,7 +27,7 @@ const HomeTwo = () => {
             <TeamTwo/>
             <PortfolioTwo/>
             <BlogTwo/>
-            <FooterTwo/>
+            {/* <FooterTwo/> */}
         </>
     )
 }

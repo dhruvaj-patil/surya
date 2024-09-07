@@ -16,7 +16,7 @@ import FooterForm from "../Components/Contact/FooterForm";
 const HomeThree = () => {
     return (
         <>
-            <HeaderThree/>
+            {/* <HeaderThree/> */}
             <HeroThree/>
             <BrandCarouselFour/>
             <ServicesThree/>
@@ -28,7 +28,7 @@ const HomeThree = () => {
             <TestimonialTwo/>
             <BlogThree/>
             <FooterForm/>
-            <FooterThree/>
+            {/* <FooterThree/> */}
         </>
     )
 }

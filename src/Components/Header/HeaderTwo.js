@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import HeaderTwoTop from './HeaderTwoTop'
 import mainLogo from '../../assets/img/logo-color.png';
 import { Link } from 'react-router-dom';
-import MobileMenu from './MobileMenu';
+import MobileMenu from '../surya/Layout/Header/MobileMenu';
 
 const HeaderTwo = () => {
     const [search, setSearch] = useState(true);

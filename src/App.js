@@ -1,23 +1,14 @@
-import React, {useState, useEffect} from 'react';
-import { Routes, Route} from 'react-router-dom';  
-import Preloader from './Components/Preloader';
-import ScrollTopBtn from './Components/ScrollTopBtn';
-import AboutPage from './pages/AboutPage';
-import ServicePage from './pages/ServicePage';
-import HomeOne from './pages/HomeOne';
-import HomeTwo from './pages/HomeTwo';
-import News from './pages/News';
-import NewsDetails from './pages/NewsDetails';
-import TeamPage from './pages/TeamPage';
-import FaqPage from './pages/FaqPage';
-import PricingPage from './pages/PricingPage';
-import ServiceDetails from './pages/ServiceDetails';
-import HomeThree from './pages/HomeThree';
-import HomeFour from './pages/HomeFour';
-import ProjectPage from './pages/ProjectPage';
-import ContactPage from './pages/ContactPage';
-import Home from './pages/surya/Home';
-
+import React, { useState, useEffect } from "react";
+import { Routes, Route } from "react-router-dom";
+import Preloader from "./Components/Preloader";
+import ScrollTopBtn from "./Components/ScrollTopBtn";
+import Home from "./pages/surya/Home";
+import About from "./pages/surya/AboutPage";
+import Layout from "./Components/surya/Layout/Layout";
+import ConstructionPage from "./pages/surya/ConstructionPage";
+import StructuralPage from "./pages/surya/StructuralPage";
+import PortfolioPage from "./pages/surya/PortfolioPage";
+import CareerPage from "./pages/surya/CareerPage";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -29,36 +20,24 @@ function App() {
   }, []);
 
   if (loading && false) {
-    return <Preloader/>
+    return <Preloader />;
   } else {
     return (
-    <>
-      <ScrollTopBtn/>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/services" element={<ServicePage />} />
-        {/* <Route path="/homeOne" element={<Portfolio />} />
-        <Route path="/homeOne" element={<Careers />} /> */}
-
-
-        {/* <Route path="/" element={<HomeOne />} />
-        <Route path="/homeTwo" element={<HomeTwo />} />
-        <Route path="/homeThree" element={<HomeThree />} />
-        <Route path="/homeFour" element={<HomeFour />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/services" element={<ServicePage />} />
-        <Route path="/team" element={<TeamPage />} />
-        <Route path="/faq" element={<FaqPage />} />
-        <Route path="/contact" element={<ContactPage />} />
-        <Route path="/pricing" element={<PricingPage />} />
-        <Route path="/newsDetails" element={<NewsDetails />} />
-        <Route path="/servicesDetails" element={<ServiceDetails />} />
-        <Route path="/news" element={<News />} />
-        <Route path="/projects" element={<ProjectPage />} /> */}
-      </Routes>
-    </>
-    )
+      <>
+        <Layout>
+          <ScrollTopBtn />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/services/construction" element={<ConstructionPage />} />
+            <Route path="/services/structural-design" element={<StructuralPage />} />
+            <Route path="/portfolio" element={<PortfolioPage />} />
+            <Route path="/careers" element={<CareerPage />} />
+            <Route path="*" element={<Home />} />
+          </Routes>
+        </Layout>
+      </>
+    );
   }
 }
 

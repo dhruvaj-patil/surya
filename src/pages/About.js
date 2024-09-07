@@ -9,14 +9,22 @@ import Timeline from '../Components/Timeline';
 import TeamThree from '../Components/Team/TeamThree';
 import BrandCarouselThree from '../Components/Brands/BrandCarouselThree';
 import Skill from '../Components/Skills/Skill';
+// import Header from "../Components/surya/Header";
 
 
-const AboutPage = () => {
+const aboutData = {
+  title: 'About us',
+  heading: 'About us',
+  currentPage: 'About'
+}
+
+const About = () => {
   return (
     <>
         <HeaderOne/>
+        {/* <Header /> */}
         <PageBanner title='About us' bannerBg={bannerBg} currentPage='About' />
-        <AboutOne pt />
+        <AboutOne pt data={aboutData} />
         <AboutBanner/>
         <Timeline/>
         <Skill/>
@@ -27,4 +35,4 @@ const AboutPage = () => {
   )
 }
 
-export default AboutPage
+export default About

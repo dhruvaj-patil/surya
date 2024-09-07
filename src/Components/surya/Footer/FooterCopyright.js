@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 const d = new Date();
 let currentYear = d.getFullYear();
 
-const FooterOneCopyrights = () => {
+const FooterCopyrights = () => {
     return (
         <div className='footer-bottom'>
             <div className="container">
@@ -16,8 +16,8 @@ const FooterOneCopyrights = () => {
                     <div className="col-md-6 col-12">
                         <div className="footer-menu mt-3 mt-md-0 text-center text-md-end">
                             <ul>
-                                <li><Link to="#">Teams &#38; Conditions</Link></li>
-                                <li><Link to="/contact">Contact</Link></li>
+                                <li><a href="#">Teams &#38; Conditions</a></li>
+                                {/* <li><Link to="/contact">Contact</Link></li> */}
                             </ul>
                         </div>
                     </div>
@@ -27,4 +27,4 @@ const FooterOneCopyrights = () => {
     )
 }   
 
-export default FooterOneCopyrights;
+export default FooterCopyrights;

@@ -15,7 +15,7 @@ import FaqTwo from "../Components/Faq/FaqTwo";
 const HomeFour = () => {
     return (
         <div className="font-oswald">
-            <HeaderFour/>
+            {/* <HeaderFour/> */}
             <HeroFour/>
             <AboutFour/>
             <ServicesFour/>
@@ -27,7 +27,7 @@ const HomeFour = () => {
             <FaqTwo/>
             <CtaThree/>
             <BlogFour/>
-            <FooterFour/>
+            {/* <FooterFour/> */}
         </div>
     )
 }

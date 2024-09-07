@@ -23,7 +23,7 @@
     "react-wow": "^1.0.0",
     "simple-react-lightbox": "^3.6.9-0",
     "swiper": "^8.4.7",
-    "uuid": "^9.0.0",
+    "uuid": "^9.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

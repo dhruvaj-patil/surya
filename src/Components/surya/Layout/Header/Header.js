@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import mainLogo from "../../assets/surya/surya_logo.png";
-import OffsetMenu from "../Header/OffsetMenu";
-import MobileMenu from "../Header/MobileMenu";
-import HeroSocials from "../Hero/HeroSocials";
+import mainLogo from "../../../../assets/surya/surya_logo.png";
+import OffsetMenu from "../../../Header/OffsetMenu";
+import MobileMenu from "./MobileMenu";
+import HeroSocials from "../../../Hero/HeroSocials";
 // import MobileMenu from "./MobileMenu";
 // import OffsetMenu from "./OffsetMenu";
 
@@ -23,31 +23,31 @@ const MENU_ITEMS = [
         subMenu: [
           {
             title: "Industrial Buildings",
-            link: "services/construction/industrial-buildings",
+            link: "/services/construction/#industrial-buildings",
           },
           {
             title: "PEB Structures",
-            link: "services/construction/peb-structures",
+            link: "/services/construction/#peb-structures",
           },
           {
             title: "Water Treatment Plants",
-            link: "services/construction/water-treatment-plants",
+            link: "/services/construction/#water-treatment-plants",
           },
           {
             title: "Sewage Treatment Plants",
-            link: "services/construction/sewage-treatment-plants",
+            link: "/services/construction/#sewage-treatment-plants",
           },
           {
             title: "Commercial Buildings",
-            link: "services/construction/commercial-buildings",
+            link: "/services/construction/#commercial-buildings",
           },
           {
             title: "Residential Buildings",
-            link: "services/construction/residential-buildings",
+            link: "/services/construction/#residential-buildings",
           },
           {
             title: "Bungalows",
-            link: "services/construction/bungalows",
+            link: "/services/construction/#bungalows",
           },
         ],
       },
@@ -57,16 +57,12 @@ const MENU_ITEMS = [
         isSubMenu: true,
         subMenu: [
           {
-            title: "Commercial Buildings",
-            link: "services/structural-design/commercial-buildings",
-          },
-          {
-            title: "Residential Buildings",
-            link: "services/structural-design/residential-buildings",
+            title: "Commercial and Residential Buildings",
+            link: "/services/structural-design/#commercial-and-residential-buildings",
           },
           {
             title: "Bungalows",
-            link: "services/structural-design/bungalows",
+            link: "/services/structural-design/#bungalows",
           },
         ],
       },
@@ -82,7 +78,7 @@ const MENU_ITEMS = [
   },
   {
     title: "Contact Us",
-    link: "/contact",
+    link: "/#contact-us",
   },
   {
     title: "Careers",
@@ -90,7 +86,7 @@ const MENU_ITEMS = [
   },
 ];
 
-const HeaderOne = () => {
+const Header = () => {
   const [search, setSearch] = useState(true);
   const [offset, setOffset] = useState(true);
   const [mobileMenu, setMobileMenu] = useState(true);
@@ -152,9 +148,9 @@ const HeaderOne = () => {
               </ul>
             </div>
             <div className="header-right-elements d-flex align-items-center justify-content-between">
-              <Link to="/contact" className="theme-btn d-none d-sm-block">
+              {/* <Link to="/contact" className="theme-btn d-none d-sm-block">
                 Get Free Quote
-              </Link>
+              </Link> */}
               <span
                 onClick={handleOffset}
                 className="side-menu-toggle d-none d-xl-block"
@@ -182,4 +178,4 @@ const HeaderOne = () => {
   );
 };
 
-export default HeaderOne;
+export default Header;

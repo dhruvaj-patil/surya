@@ -1,7 +1,7 @@
 
 const FooterForm = () => {
     return (
-        <section className="contact-sec-wrapper fix section-bg section-padding">
+        <section id="contact-us" className="contact-sec-wrapper fix section-bg section-padding">
             <div className="container">
                 <div className="row align-items-end d-flex">
                     <div className="col-lg-6 col-xl-5">

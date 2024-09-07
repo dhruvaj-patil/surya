@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import mainLogo from '../../assets/img/logo-4.png';
-import MobileMenu from "./MobileMenu";
+import MobileMenu from "../surya/Layout/Header/MobileMenu";
 import OffsetMenu from "./OffsetMenu";
 
 const HeaderFour = () => {
