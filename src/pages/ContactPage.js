@@ -1,21 +1,19 @@
-import React from 'react'
-import FooterTwo from '../Components/Footer/FooterTwo'
-import HeaderOne from '../Components/Header/HeaderOne'
-import bannerBg from '../assets/img/page-banner.jpg';
-import PageBanner from '../Components/PageBanner';
-import BrandCarouselThree from "../Components/Brands/BrandCarouselThree";
-import ContactPageContents from "../Components/Contact/ContactPageContents";
+import React from "react";
+import FooterForm from "../../Components/Contact/FooterForm";
+import bannerBg from "../../assets/img/page-banner.jpg";
+import PageBanner from "../../Components/PageBanner";
 
-const ContactPage = () => {
+function ContactPage() {
   return (
-    <>
-        <HeaderOne/>
-        <PageBanner title='Contact Us' bannerBg={bannerBg} currentPage='contact' />
-        <ContactPageContents/>
-        <BrandCarouselThree/>
-        <FooterTwo/>
-    </>
-  )
+    <div>
+        <PageBanner
+          title="Get In Touch"
+          bannerBg={bannerBg}
+          currentPage="Contact"
+        />
+      <FooterForm />
+    </div>
+  );
 }
 
 export default ContactPage;

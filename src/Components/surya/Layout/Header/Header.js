@@ -1,11 +1,9 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import mainLogo from "../../../../assets/surya/surya_logo.png";
-import OffsetMenu from "../../../Header/OffsetMenu";
+import OffsetMenu from "./OffsetMenu";
 import MobileMenu from "./MobileMenu";
-import HeroSocials from "../../../Hero/HeroSocials";
-// import MobileMenu from "./MobileMenu";
-// import OffsetMenu from "./OffsetMenu";
+
 
 const MENU_ITEMS = [
   {
@@ -87,13 +85,10 @@ const MENU_ITEMS = [
 ];
 
 const Header = () => {
-  const [search, setSearch] = useState(true);
   const [offset, setOffset] = useState(true);
   const [mobileMenu, setMobileMenu] = useState(true);
 
-  const handleSearch = () => {
-    setSearch(!search);
-  };
+
 
   const handleOffset = (e) => {
     e.preventDefault();

@@ -1,10 +1,8 @@
 import { Link } from "react-router-dom";
 import FooterCopyrights from "./FooterCopyright";
-import { useState } from "react";
 import FooterCta from "./FooterCta";
 
 const FooterOne = () => {
-  const [input, setInput] = useState("");
   return (
     <>
       <footer className="footer-1 footer-wrap">
@@ -22,7 +20,7 @@ const FooterOne = () => {
                         <i className="fal fa-phone"></i>
                       </div>
                       <div className="contact-info">
-                        <a href="tel:123-456-7890">+91-20-2951 0473</a>
+                        <a href="tel:+91-20-2951 0473">+91-20-2951 0473</a>
                         
                       </div>
                     </div>
@@ -32,7 +30,7 @@ const FooterOne = () => {
                       </div>
                       <div className="contact-info">
 
-                        <a href="">inquiry@suryaengineers.com</a>
+                        <a href="mailto:inquiry@suryaengineers.com">inquiry@suryaengineers.com</a>
                       </div>
                     </div>
                     <div className="single-contact-info">
@@ -40,10 +38,10 @@ const FooterOne = () => {
                         <i className="fal fa-map-marker-alt"></i>
                       </div>
                       <div className="contact-info">
-                        <a>
+                        <p>
                         “Surya House”, S. No. 143, Lagadmala, Sinhagad Road, <br />
                         Opp. Lokmat, Dhayari, Pune 411 041. Maharashtra. India.
-                        </a>
+                        </p>
                       </div>
 {/* 
                       <div className="contact-info">

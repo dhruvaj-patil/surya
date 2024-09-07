@@ -1,9 +1,5 @@
 import React from "react";
 import inventoryData from "./inventoryData";
-import img1 from "../../../assets/img/home4/t1.jpg";
-import img2 from "../../../assets/img/home4/t2.jpg";
-import img3 from "../../../assets/img/home4/t3.jpg";
-import img4 from "../../../assets/img/home4/t4.jpg";
 
 const Inventory = () => {
   return (

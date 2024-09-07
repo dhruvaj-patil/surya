@@ -1,12 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import image1 from "../../../assets/img/gallery/1.jpg";
-import image2 from "../../../assets/img/gallery/5.jpg";
-import image3 from "../../../assets/img/gallery/6.jpg";
-import ProjectsTab from "../../Projects/ProjectsTab";
-import img3 from "../../../assets/img/project-tab2.jpg";
 import img2 from "../../../assets/img/project-tab2.jpg";
-import img1 from "../../../assets/img/project-tab2.jpg";
 
 
 
@@ -42,7 +36,7 @@ function ServiceDetails({services, title, description}) {
                   <h3>Download Brochures</h3>
                 </div>
                 <div className="brochures-download">
-                  <a href="#" className="theme-btn">
+                  <a href="/#" className="theme-btn">
                     <i className="fal fa-file-pdf" />
                     Download .PDF
                   </a>
@@ -67,7 +61,7 @@ function ServiceDetails({services, title, description}) {
                     </div>
                     <div className="contact-info">
                       <span>Phone Number</span>
-                      <p>+91-20-2951 0473</p>
+                      <a href="tel:+91-20-2951 0473">+91-20-2951 0473</a>
                     </div>
                   </div>
                   <div className="single-contact-info">
@@ -76,7 +70,7 @@ function ServiceDetails({services, title, description}) {
                     </div>
                     <div className="contact-info">
                       <span>Email Address</span>
-                      <p>inquiry@suryaengineers.com</p>
+                      <a href="mailto:inquiry@suryaengineers.com">inquiry@suryaengineers.com</a>
                     </div>
                   </div>
                   <div className="single-contact-info">

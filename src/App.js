@@ -2,13 +2,13 @@ import React, { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import Preloader from "./Components/Preloader";
 import ScrollTopBtn from "./Components/ScrollTopBtn";
-import Home from "./pages/surya/Home";
-import About from "./pages/surya/AboutPage";
+import Home from "./pages/Home";
+import About from "./pages/AboutPage";
 import Layout from "./Components/surya/Layout/Layout";
-import ConstructionPage from "./pages/surya/ConstructionPage";
-import StructuralPage from "./pages/surya/StructuralPage";
-import PortfolioPage from "./pages/surya/PortfolioPage";
-import CareerPage from "./pages/surya/CareerPage";
+import ConstructionPage from "./pages/ConstructionPage";
+import StructuralPage from "./pages/StructuralPage";
+import PortfolioPage from "./pages/PortfolioPage";
+import CareerPage from "./pages/CareerPage";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -23,20 +23,26 @@ function App() {
     return <Preloader />;
   } else {
     return (
-      <>
+      <div id='surya'>
         <Layout>
           <ScrollTopBtn />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/services/construction" element={<ConstructionPage />} />
-            <Route path="/services/structural-design" element={<StructuralPage />} />
+            {/* <Route
+              path="/services/construction"
+              element={<ConstructionPage />}
+            />
+            <Route
+              path="/services/structural-design"
+              element={<StructuralPage />}
+            /> */}
             <Route path="/portfolio" element={<PortfolioPage />} />
             <Route path="/careers" element={<CareerPage />} />
-            <Route path="*" element={<Home />} />
+            {/* <Route path="*" element={<Home />} /> */}
           </Routes>
         </Layout>
-      </>
+      </div>
     );
   }
 }

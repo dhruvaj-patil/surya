@@ -11,13 +11,13 @@ import '../node_modules/bootstrap/dist/js/bootstrap'
 import SimpleReactLightbox from 'simple-react-lightbox';
 
 ReactDOM.render(
-    <div id='surya'>
+    <>
     <SimpleReactLightbox>
       <BrowserRouter>
         <App />
       </BrowserRouter>
       </SimpleReactLightbox>
-    </div>,
+    </>,
     document.getElementById('root')
   );
 reportWebVitals();

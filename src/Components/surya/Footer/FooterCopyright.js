@@ -16,7 +16,7 @@ const FooterCopyrights = () => {
                     <div className="col-md-6 col-12">
                         <div className="footer-menu mt-3 mt-md-0 text-center text-md-end">
                             <ul>
-                                <li><a href="#">Teams &#38; Conditions</a></li>
+                                <li><a href="/#">Teams &#38; Conditions</a></li>
                                 {/* <li><Link to="/contact">Contact</Link></li> */}
                             </ul>
                         </div>

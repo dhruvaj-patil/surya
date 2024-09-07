@@ -20,7 +20,6 @@ import bungalow from "../../../assets/surya/images/demo_bunglow.jpg";
 import industrial from "../../../assets/surya/images/demo_indsutrial.jpg";
 
 import institutional from "../../../assets/surya/images/demo_building.jpg";
-import { _ } from "ajv";
 
 const DEFAULT_SERVICES = [
   {

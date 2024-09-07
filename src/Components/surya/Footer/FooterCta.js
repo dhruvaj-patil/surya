@@ -23,10 +23,10 @@ const FooterCta = () => {
                     </div>
                     <div className="col-md-5 col-lg-5 col-12">
                         <div className="footer-social-icon ms-md-5 text-lg-md-end d-flex justify-content-center">
-                            <a href="#"><i className="fab fa-facebook-f"></i></a>
-                            <a href="#"><i className="fab fa-twitter"></i></a>
-                            <a href="#"><i className="fab fa-instagram"></i></a>
-                            <a href="#"><i className="fab fa-linkedin-in"></i></a>
+                            <a href="/#"><i className="fab fa-facebook-f"></i></a>
+                            <a href="/#"><i className="fab fa-twitter"></i></a>
+                            <a href="/#"><i className="fab fa-instagram"></i></a>
+                            <a href="/#"><i className="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
                 </div>

@@ -1,88 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
-
-const MENU_ITEMS = [
-  {
-    title: "Home",
-    link: "/#",
-  },
-  {
-    title: "What we Do",
-    // link: "/services",
-    subMenu: [
-      {
-        title: "Construction Services",
-        link: "/services/construction",
-        isSubMenu: true,
-        subMenu: [
-          {
-            title: "Industrial Buildings",
-            src: "services/construction/industrial-buildings",
-          },
-          {
-            title: "PEB Structures",
-            src: "services/construction/peb-structures",
-          },
-          {
-            title: "Water Treatment Plants",
-            src: "services/construction/water-treatment-plants",
-          },
-          {
-            title: "Sewage Treatment Plants",
-            src: "services/construction/sewage-treatment-plants",
-          },
-          {
-            title: "Commercial Buildings",
-            src: "services/construction/commercial-buildings",
-          },
-          {
-            title: "Residential Buildings",
-            src: "services/construction/residential-buildings",
-          },
-          {
-            title: "Bungalows",
-            src: "services/construction/bungalows",
-          },
-        ],
-      },
-      {
-        title: "Structural Design Services",
-        link: "/services/structural-design",
-        isSubMenu: true,
-        subMenu: [
-          {
-            title: "Commercial Buildings",
-            src: "services/structural-design/commercial-buildings",
-          },
-          {
-            title: "Residential Buildings",
-            src: "services/structural-design/residential-buildings",
-          },
-          {
-            title: "Bungalows",
-            src: "services/structural-design/bungalows",
-          },
-        ],
-      },
-    ],
-  },
-  {
-    title: "About Us",
-    link: "/about",
-  },
-  {
-    title: "Portfolio",
-    link: "/portfolio",
-  },
-  {
-    title: "Contact Us",
-    link: "/contact",
-  },
-  {
-    title: "Careers",
-    link: "/careers",
-  },
-];
 
 const MobileMenu = ({ mobileMenu, handleMobileMenu, menuItems }) => {
   const _renderSubMenu = (subMenu) => {
@@ -125,7 +41,7 @@ const MobileMenu = ({ mobileMenu, handleMobileMenu, menuItems }) => {
         <a href="mailto:inquiry@suryaengineers.com">
           <i className="fal fa-envelope"></i>inquiry@suryaengineers.com
         </a>
-        <a href="tel:123-456-7890">
+        <a href="tel:+91-987-098-098-09">
           <i className="fal fa-phone"></i>987-098-098-09
         </a>
         <a href="/#contact-us" className="d-btn theme-btn bg-com">
